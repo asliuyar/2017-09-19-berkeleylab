@@ -1,24 +1,24 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for workshop organizer, such as "grace@hopper.org"
+venue: "Tufts University Sackler School of Graduate Biomedical Sciences"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "136 Harrison Avenue, Boston, Massachusetts"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: "us"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "42.350130, -71.061511"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "Jan 26-27, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2017-01-26      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2017-01-27        # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Sue McClatchy", "Dan Gatti"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TBD"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "TBD"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
-day1_am: "Data organization in spreadsheets and OpenRefine"
-day1_pm: "Introduction to R"
-day2_am: "Data analysis and visualization in R"
-day2_pm: "SQL for data management"
+day1_am: "Introduction to the Shell and Cloud Computing"
+day1_pm: "The Shell and Project Setup"
+day2_am: "Know Your Data" 
+day2_pm: "Variant Calling and Workflow Automation"
 ---
 <!--
   HEADER
@@ -74,7 +74,8 @@ Participants should bring their laptops and plan to participate actively. By the
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+	The workshop is open only to graduate students from the Sackler School of Graduate 
+	Biomedical Sciences.
 </p>
 
 <!--
@@ -138,6 +139,46 @@ Participants should bring their laptops and plan to participate actively. By the
   2' to be actual dates or days of the week.
 -->
 <h2>Preliminary Schedule</h2>
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Thursday, January 26</h3>
+    <table class="table table-striped">
+      <tr> <td>Morning</td><td>{{page.day1_am}}</td> </tr>
+      <tr> <td>09:00</td>  <td>Workshop overview</td> </tr>
+      <tr> <td>09:30</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/01_intro_and_cloud_setup.md>Using cloud computing for genomics</a> </td> </tr>
+      <tr> <td>10:00</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/02_the_filesystem.md>Introduction to Unix: navigating, paths, shortcuts</a></td> </tr>
+      <tr> <td>10:45</td>  <td>Coffee/tea break</td> </tr>
+      <tr> <td>11:00</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/02_the_filesystem.md>Introduction to Unix: examining files, modifying, writing</a></td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch on your own</td> </tr>
+      <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
+      <tr> <td>13:00</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/03_searching_files.md>Introduction to Unix: searching and redirection</a></td> </tr>
+      <tr> <td>13:45</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/04_loops_and_scripts.md>Shell scripts</a></td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee/tea break</td> </tr>
+      <tr> <td>14:45</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/04_loops_and_scripts.md>Shell scripts (cont)</a></td> </tr>
+      <tr> <td>15:45</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/05_planning-genomics.md>Genomics planning </a></td> </tr>
+      <tr> <td>16:45</td>  <td>Wrap-up</td> </tr>
+    </table>
+    </table>
+ 
+    <h3>Friday, January 27</h3>
+    <table class="table table-striped">
+      <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
+       <tr> <td>09:00</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/06_intro-to-dataset.md>Introduction to the workshop dataset</a></td> </tr>
+      <tr> <td>09:15</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/06_intro-to-dataset.md#accessing-the-original-archived-data>Examining data on the NCBI SRA database</a></td> </tr>
+      <tr> <td>09:45</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/07_read_qc.md>QC of NGS data</a></td> </tr>
+      <tr> <td>10:30</td>  <td>Coffee/tea break</td> </tr>
+      <tr> <td>10:45</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/07_read_qc.md>QC of NGS data (cont)</a></td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch on your own</td> </tr>
+      <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
+      <tr> <td>13:00</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/08_variant-calling-workflow.md>Variant calling workflow (QC, alignment, variant calling)</a></td> </tr> 
+      <tr> <td>14:00</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/09_automating_workflow.md>Automating the workflow</a></td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee/tea break</td> </tr>
+      <tr> <td>14:45</td>  <td><a href=https://github.com/hbc/dc_2016_04/blob/master/lessons/09_automating_workflow.md>Automating the workflow (cont)</a></td> </tr>
+      <tr> <td>16:45</td>  <td>Wrap-up</td> </tr>
+    </table>
+ </div>
+</div>
 
 <!-- DO NOT EDIT SURVEY LINKS -->
 <p><em>Surveys</em></p>
@@ -204,7 +245,7 @@ Participants should bring their laptops and plan to participate actively. By the
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<!--
+
 <h2>Syllabus</h2>
 
 <div class="row">
@@ -220,6 +261,7 @@ Participants should bring their laptops and plan to participate actively. By the
       <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
     </ul>
   </div>
+ <!--
   <div class="col-md-6">
     <h3>Programming in Python</h3>
     <ul>
@@ -305,6 +347,24 @@ their own laptops to insure the proper setup of tools for an efficient workflow
 once you leave the workshop.
 <p>
 Please follow these <a href=install.html>Setup Instructions</a>.
+<p>
+<strong>Mac users</strong>
+<ul>
+	<li><a href=https://www.java.com/en/download/>Java</a></li> 
+	<li><a href=https://filezilla-project.org/download.php?show_all=1>Filezilla</a></li> 
+	<li><a href=http://software.broadinstitute.org/software/igv/download>Integrative Genomics Viewer (IGV)</a></li>    
+</ul>
+</p>
+<p>
+<strong>Windows users</strong>
+<ul>
+	<li><a href=http://www.putty.org/>Putty</a>   
+Download putty.exe.
+	<li><a href=https://www.java.com/en/download/>Java</a></li> 
+	<li><a href=https://filezilla-project.org/download.php?show_all=1>Filezilla</a></li> 
+	<li><a href=http://software.broadinstitute.org/software/igv/download>Integrative Genomics Viewer (IGV)</a></li>    
+</ul>
+</p>
 
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
